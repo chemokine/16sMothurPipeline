@@ -41,9 +41,9 @@ rel_dir=taxa_dir+'taxa_summary_Filter_rel/'
 para_infile=input_dir+"CohortGroups_ParametersList.txt"
 
 work_dir=output_dir+"Phyloseq_DESeq2/"
-taxa_ab_dir=work_dir+''
 input_dir=work_dir+'phyloseq_DESeq_in/'
 nb_dir=work_dir+'phyloseq_DESeq2_out/'
+
 if os.path.exists(work_dir)==False:
     os.mkdir(work_dir)
 if os.path.exists(input_dir):
