@@ -1,0 +1,16 @@
+set.dir(output=../output/mothur/UniFrac)
+set.dir(input=../output/mothur/UniFrac)
+
+
+#Output File Names: 
+#0.03Cluster_RepresentSeq4OTUs_Filter.treewsummary
+#0.03Cluster_RepresentSeq4OTUs_Filter.tree1.weighted.phylip.dist
+unifrac.weighted(tree=0.03Cluster_OTU_seq_Filter.tree,count=0.03Cluster_OTU_seq_Filter.count_table,distance=square)
+unifrac.unweighted(tree=0.03Cluster_OTU_seq_Filter.tree,count=0.03Cluster_OTU_seq_Filter.count_table,distance=square)
+
+
+#Output File Names: 
+#0.03Cluster_OTU_seq_Filter.tree1.weighted.phylip.pcoa.axes
+#0.03Cluster_OTU_seq_Filter.tree1.weighted.phylip.pcoa.loadings
+pcoa(phylip=0.03Cluster_OTU_seq_Filter.tree1.weighted.phylip.dist)
+pcoa(phylip=0.03Cluster_OTU_seq_Filter.tree1.unweighted.phylip.dist)

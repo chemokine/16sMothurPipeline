@@ -1,0 +1,12 @@
+set.dir(output=../output/mothur/BrayCurtis)
+set.dir(input=../output/mothur/BrayCurtis)
+
+#Output File Names: 
+#OTUs_Filter.summary
+#OTUs_Filter.braycurtis.0.03.lt.dist
+summary.shared(shared=0.03Cluster_OTU_Filter.shared,calc=braycurtis,distance=true)
+
+#Output File Names: 
+#OTUs_Filter.braycurtis.0.03.lt.pcoa.axes
+#OTUs_Filter.braycurtis.0.03.lt.pcoa.loadings
+pcoa(phylip=0.03Cluster_OTU_Filter.braycurtis.0.03.lt.dist)

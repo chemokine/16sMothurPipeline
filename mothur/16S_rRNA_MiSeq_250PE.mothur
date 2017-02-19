@@ -1,0 +1,118 @@
+set.dir(output=../output/mothur/Mothur_pipeline/mothur_run/)
+set.dir(input=../output/mothur/Mothur_pipeline/mothur_run/)
+
+####################De-noising####################
+#First, we align the pairs of sequences. 
+#Next, we look across the alignment and identify any positions where the two reads disagree. 
+#If one sequence has a base and the other has a gap, the quality score of the base must be over 25 to be considered real. 
+#If both sequences have a base at that position, then we require one of the bases to have a quality score 6 or more points better than the other. 
+#If it is less than 6 points better, then we set the consensus base to an N.
+#The stability.contigs.report file will tell you something about the contig assembly for each read
+make.contigs(file=stability.files, processors=12)
+summary.seqs(fasta=stability.trim.contigs.fasta)
+get.current()
+
+#Take care of sequences longer than 302bp (not well assembled), and ambiguous base calls.
+#screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, maxambig=0, maxlength=275)
+screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, summary=stability.trim.contigs.summary, maxambig=0, maxlength=253)
+summary.seqs(fasta=stability.trim.contigs.good.fasta)
+get.current()
+
+####################Processing improved sequences####################
+#Get unique sequences
+unique.seqs(fasta=stability.trim.contigs.good.fasta)
+
+#simplify the names and group files
+count.seqs(name=stability.trim.contigs.good.names, group=stability.contigs.good.groups)
+summary.seqs(count=stability.trim.contigs.good.count_table)
+get.current()
+
+#Make v4 silva, updated June, 2015
+#pcr.seqs(fasta=silva.nr_v119.align, start=11894, end=25319, keepdots=F, processors=10)
+#unique.seqs()
+#system(mv silva.nr_v119.pcr.unique.align silva.v4.fasta)
+
+
+#Align reads against whole reference database
+align.seqs(fasta=stability.trim.contigs.good.unique.fasta, reference=silva.v4.fasta)
+summary.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table)
+get.current()
+
+#To make sure that everything overlaps the same region we'll re-run screen.seqs to get sequences that start at or before position 13862 and end at or after position 23444. 
+#We'll also set the maximum homopolymer length to 8 since there's nothing in the database with a stretch of 9 or more of the same base in a row (this really could have been done in the first execution of screen.seqs above). 
+#Note that we need the count table so that we can update the table for the sequences we're removing and we're also using the summary file so we don't have to figure out again all the start and stop positions
+screen.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table, summary=stability.trim.contigs.good.unique.summary, start=1968, end=11550, maxhomop=8)
+summary.seqs(fasta=current, count=current)
+get.current()
+
+#we want to make sure they only overlap that region. So we'll filter the sequences to remove the overhangs at both ends. 
+#Since we've done paired-end sequencing, this shouldn't be much of an issue, but whatever. In addition, there are many columns in the alignment that only contain gap characters (i.e. "-")
+filter.seqs(fasta=stability.trim.contigs.good.unique.good.align, vertical=T, trump=.)
+get.current()
+
+#Because we've perhaps created some redundancy across our sequences by trimming the ends, we can re-run unique.seqs:
+unique.seqs(fasta=stability.trim.contigs.good.unique.good.filter.fasta, count=stability.trim.contigs.good.good.count_table)
+summary.seqs(fasta=current, count=current)
+get.current()
+
+#The next thing we want to do to further de-noise our sequences is to pre-cluster the sequences using the pre.cluster command allowing for up to 2 differences between sequences. 
+#This command will split the sequences by group and then sort them by abundance and go from most abundant to least and identify sequences that are within 2 nt of each other. 
+#If they are then they get merged. We generally favor allowing 1 difference for every 100 bp of sequence.
+pre.cluster(fasta=stability.trim.contigs.good.unique.good.filter.unique.fasta, count=stability.trim.contigs.good.unique.good.filter.count_table, diffs=2)
+get.current()
+
+
+#At this point we have removed as much sequencing error as we can and it is time to turn our attention to removing chimeras.
+#Again, this command will split the data by sample and check for chimeras. 
+#Our preferred way of doing this is to use the abundant sequences as our reference. 
+#In addition, if a sequence is flagged as chimeric in one sample, the the default (dereplicate=F) is to remove it from all samples. 
+#Our experience suggests that this is a bit aggressive since we've seen rare sequences get flagged as chimeric when they're the most abundant sequence in another sample.
+chimera.uchime(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t)
+get.current()
+
+#Running chimera.uchime with the count file will remove the chimeric sequences from the count file. 
+#But you still need to remove those sequences from the fasta file.
+remove.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, accnos=stability.trim.contigs.good.unique.good.filter.unique.precluster.uchime.accnos)
+summary.seqs(fasta=current, count=current)
+get.current()
+
+#Remove undesired reads
+#First classify
+classify.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.uchime.pick.count_table, reference=trainset_RDP.pds.fasta, taxonomy=trainset_RDP.pds.tax, cutoff=80)
+summary.seqs(fasta=current, count=current)
+get.current()
+
+#Now that everything is classified we want to remove our undesirables.
+remove.lineage(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.uchime.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown)
+summary.seqs(fasta=current, count=current)
+get.current()
+
+####################Bin into OTUs####################
+#For small dataset
+#dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, cutoff=0.20)
+#cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.uchime.pick.pick.count_table)
+#Alternative
+#In this approach, we use the taxonomic information to split the sequences into bins and then cluster within each bin. 
+#We've published results showing that if you split at the level of Order or Family, and cluster to a 0.03 cutoff, you'll get just as good of clustering as you would with the "traditional" approach.
+#In this command we use taxlevel=4, which corresponds to the level of Order. 
+cluster.split(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.uchime.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.taxonomy, splitmethod=classify, taxlevel=4, cutoff=0.15)
+get.current()
+
+
+#phylotype(taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy)
+#phylotype(taxonomy=current)
+make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.unique_list.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.uchime.pick.pick.count_table, label=0.03)
+get.current()
+
+
+#We probably also want to know the taxonomy for each of our OTUs.
+classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.unique_list.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.uchime.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.taxonomy, label=0.03)
+get.current()
+
+
+#It needs taxonomic information from classify.otu
+make.biom(shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.unique_list.shared, constaxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.an.unique_list.0.03.cons.taxonomy)
+get.current()
+
+
+quit()

@@ -1,0 +1,107 @@
+#!/usr/bin/python
+
+import os
+import sys
+import re
+from subprocess import call
+from subprocess import check_call
+import subprocess
+import time
+from time import gmtime, strftime
+import shutil
+
+
+"""
+Main function
+(1)Unzip the files with raw reads and copy them to mothur running director 
+(2)Prepare for running mothur
+Copy stablity.files & mothur script to mothur directory
+Copy other files for mothur run
+(2)Run to get OTUs using mothur
+"""
+def modify_mothur_script(mothur_script,mothur_script_new,output_dir):
+    outfh=open(mothur_script_new,'w')
+    infh=open(mothur_script,'r')
+    for line in infh:
+        if re.search("../output/",line):
+            line=line.replace("../output/",output_dir)
+        outfh.write(line)
+    outfh.close()
+    infh.close()
+    return
+
+
+"""
+#Main function
+"""
+if len(sys.argv)!=7:
+    raise Exception ("Usage: Preprocessing_MiSeq.py <processors><mothur path> <full path of raw reads fodler> <package reference data folder> <input folder> <output folder>")
+
+processors=sys.argv[1]
+mothur=sys.argv[2]
+raw_reads_dir=sys.argv[3]
+ref_dir=sys.argv[4]
+input_dir=sys.argv[5]
+output_dir=sys.argv[6]
+
+work_dir=output_dir+"mothur/Mothur_pipeline/"
+mothur_run=work_dir+'mothur_run/'
+
+if os.path.exists(work_dir)==False:
+    os.mkdir(work_dir)
+if os.path.exists(mothur_run)==False:
+    os.mkdir(mothur_run)
+
+
+
+#(1)Unzip the raw fastq files and copy them to mothur_run
+print "Unzip the raw fastq files..."
+print strftime("%Y-%m-%d %H:%M:%S", gmtime())
+perl_script="./pre_cp_unzip_fastq.py"
+call([perl_script,raw_reads_dir,mothur_run])
+python_script="./pre_count_ReadsSample.py"
+counts_outfile=work_dir+'CountFastq_rawReadsPerSample.txt'
+call([python_script,mothur_run,counts_outfile])
+
+
+#(2)Make input files for mothur run
+print "Make input files for mothur first run..."
+print strftime("%Y-%m-%d %H:%M:%S", gmtime())
+#Stability files
+stability_file=input_dir+'stability.files'
+shutil.copy(stability_file,mothur_run)
+#Mothur script
+mothur_script="./mothur/16S_rRNA_MiSeq_250PE.mothur"
+mothur_script_new=mothur_run+'16S_rRNA_MiSeq_250PE.mothur'
+modify_mothur_script(mothur_script,mothur_script_new,output_dir)
+#Other support files
+data_file=ref_dir+'silva.v4.fasta'
+shutil.copy(data_file,mothur_run)
+data_file=ref_dir+'trainset_RDP.pds.fasta'
+shutil.copy(data_file,mothur_run)
+data_file=ref_dir+'trainset_RDP.pds.tax'
+shutil.copy(data_file,mothur_run)
+
+
+
+#(3)Call mothur script to get OTUs
+print "Get OTUs in mothur ..."
+print strftime("%Y-%m-%d %H:%M:%S", gmtime())
+call([mothur,mothur_script_new])
+
+#(4)Clean up after running
+#Move mothur log file to mothur run
+current_dir='./'
+for file in os.listdir(current_dir):
+    if file.endswith('.logfile'):
+        shutil.move(file,mothur_run)
+#Remove fastq files from mothur run
+command="rm -rf "+mothur_run+'*.fastq'
+os.system(command)
+command="rm -rf "+mothur_run+'silva.v4.fasta'
+os.system(command)
+command="rm -rf "+mothur_run+'trainset_RDP.*'
+os.system(command)
+quit()
+
+

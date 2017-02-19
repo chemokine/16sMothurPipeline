@@ -1,0 +1,618 @@
+Linux version
+
+Using ReadLine
+
+Running 64Bit Version
+
+mothur v.1.35.0
+Last updated: 03/23/2014
+
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+University of Michigan
+pschloss@umich.edu
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+Type 'quit()' to exit program
+Batch Mode
+
+
+mothur > set.dir(output=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/)
+Mothur's directories:
+outputDir=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Bacteriodetes_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Bacteriodetes_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Bacteriodetes_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Bacteriodetes_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Bacteriodetes_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Bacteriodetes_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Bacteriodetes_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Bacteriodetes_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Bacteriodetes_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Bacteriodetes_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Clostridia_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Clostridia_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Clostridia_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Clostridia_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Clostridia_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Clostridia_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Clostridia_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Clostridia_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Clostridia_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Clostridia_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Proteobacteria_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Proteobacteria_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Proteobacteria_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Proteobacteria_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Proteobacteria_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Proteobacteria_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Proteobacteria_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Proteobacteria_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_ce_w9-Proteobacteria_ce_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_ce_w9 and ABX_ce_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Proteobacteria_ce_w9-ABX_ce_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Bacteriodetes_st_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Bacteriodetes_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Bacteriodetes_st_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Bacteriodetes_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Bacteriodetes_st_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Bacteriodetes_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Bacteriodetes_st_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Bacteriodetes_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Bacteriodetes_st_w9)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Bacteriodetes_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Clostridia_st_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Clostridia_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Clostridia_st_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Clostridia_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Clostridia_st_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Clostridia_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Clostridia_st_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Clostridia_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Clostridia_st_w9)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Clostridia_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Proteobacteria_st_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Proteobacteria_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Proteobacteria_st_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Proteobacteria_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Proteobacteria_st_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Proteobacteria_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Proteobacteria_st_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Proteobacteria_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w9-Proteobacteria_st_w9)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w9 and ABX_st_w9...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Proteobacteria_st_w9-ABX_st_w9.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Bacteriodetes_st_w0)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Bacteriodetes_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Bacteriodetes_st_w0)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Bacteriodetes_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Bacteriodetes_st_w0)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Bacteriodetes_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Bacteriodetes_st_w0)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Bacteriodetes_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Bacteriodetes_st_w0)
+
+Using 1 processors.
+unique
+Comparing Bacteriodetes_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Bacteriodetes_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Clostridia_st_w0)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Clostridia_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Clostridia_st_w0)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Clostridia_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Clostridia_st_w0)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Clostridia_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Clostridia_st_w0)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Clostridia_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Clostridia_st_w0)
+
+Using 1 processors.
+unique
+Comparing Clostridia_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Clostridia_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L6_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Proteobacteria_st_w0)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L6_reverse.unique.Proteobacteria_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L2_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Proteobacteria_st_w0)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L2_reverse.unique.Proteobacteria_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L3_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Proteobacteria_st_w0)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L3_reverse.unique.Proteobacteria_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L5_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Proteobacteria_st_w0)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L5_reverse.unique.Proteobacteria_st_w0-ABX_st_w0.metastats
+
+
+mothur > metastats(shared=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/Reverse_taxa_summaryTable_ab/Taxa_L4_reverse.txt,design=/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/DesignFiles/CohortGroups.design,sets=ABX_st_w0-Proteobacteria_st_w0)
+
+Using 1 processors.
+unique
+Comparing Proteobacteria_st_w0 and ABX_st_w0...
+
+
+
+
+Output File Names: 
+/data/cctm/16S_rRNA/T0421_Chatila_Azza_Allergy.2017/2017.2.15.combineTwoRuns.RemoveFailedInTheFirstRun/Analysis/output/mothur/Metastats_Taxa/metastats_out/Taxa_L4_reverse.unique.Proteobacteria_st_w0-ABX_st_w0.metastats
+
+
+mothur > quit()
